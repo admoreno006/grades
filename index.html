@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Grade Calculator</h1>
+
+  <div class="card">
+    <label>Classwork Average (%)</label>
+    <input type="number" id="classwork">
+
+    <label>Quizzes Average (%)</label>
+    <input type="number" id="quizzes">
+
+    <label>Journals Average (%)</label>
+    <input type="number" id="journals">
+
+    <label>Project Average (%)</label>
+    <input type="number" id="project">
+
+    <label>Final / Other (30%)</label>
+    <input type="number" id="final">
+
+    <button onclick="calculate()">Calculate Grade</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
