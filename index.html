@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Grade Calculator</title>
+  <title>Grade Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,24 +10,31 @@
   <h1>Grade Calculator</h1>
 
   <div class="card">
-    <label>Classwork Average (%)</label>
-    <input type="number" id="classwork">
+    <h2>Enter Raw Scores</h2>
 
-    <label>Quizzes Average (%)</label>
-    <input type="number" id="quizzes">
+    <label>Classwork (earned / total)</label>
+    <input type="number" id="cwEarned">
+    <input type="number" id="cwTotal">
 
-    <label>Journals Average (%)</label>
-    <input type="number" id="journals">
+    <label>Quizzes</label>
+    <input type="number" id="qEarned">
+    <input type="number" id="qTotal">
 
-    <label>Project Average (%)</label>
-    <input type="number" id="project">
+    <label>Journals</label>
+    <input type="number" id="jEarned">
+    <input type="number" id="jTotal">
+
+    <label>Project</label>
+    <input type="number" id="pEarned">
+    <input type="number" id="pTotal">
 
     <label>Final / Other (30%)</label>
-    <input type="number" id="final">
+    <input type="number" id="fEarned">
+    <input type="number" id="fTotal">
 
     <button onclick="calculate()">Calculate Grade</button>
 
-    <h2 id="result"></h2>
+    <h2 id="result">Current Grade: --%</h2>
   </div>
 
   <script src="script.js"></script>
